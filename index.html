@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Official</title>
+    <link rel="stylesheet" href="fb.css">
+</head>
+<body>
+    <div class="main">
+        <img class="main-image" src="fb.svg" alt="">
+        <div class="mobile-tap">
+            <img src="file:///C:/Users/DAVID/Desktop/Project/School/Images/fb.svg" alt="">            
+        </div>
+        <h2>Facebook helps you connect and share with the people in your life.</h2>
+    </div>
+
+    <div class="form-container">
+        <form action="">
+            <div class="input-card">
+                <input type="email" name="" id="" placeholder="Email address or phone number">
+            </div>
+            <div class="input-card">
+                <input type="password" name="" id="password" placeholder="Password">
+                <div id="toggle" onclick="ShowHide()"></div>
+            </div>
+            <div class="login-card">
+                <button type="Submit">Log In</button>
+            </div>
+            <div class="forgotten-card">
+                <a href="">Forgotten Password</a>
+            </div>
+            <div class="create-account">
+                <button>Create New Account</button>
+            </div>
+        </form>
+
+        <div class="sub-card">
+            <a href="">Create a page</a>
+            for a celebrity, brand or business.
+        </div>
+    </div>
+</body>
+<script>
+    var password = document.getElementById('password');
+    var toggle = document.getElementById('toggle');
+
+    function ShowHide(){
+        if(password.type === 'password'){
+            password.setAttribute('type', 'text');
+            toggle.classList.add('hide')
+        }
+        else{
+            password.setAttribute('type', 'text');
+            toggle.classList.remove('hide')
+
+        }
+    }
+</script>
+</html>
